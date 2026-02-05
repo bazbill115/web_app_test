@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,33 +10,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Weekend Vibes</h1>
-        
+
         <!-- Google Form Action URL will be handled by JS for custom redirect -->
         <form id="weekendForm">
-            
+
             <!-- Question 1 -->
             <div class="form-group">
                 <label>Options for this weekend?</label>
                 <div class="radio-group">
                     <label class="radio-option">
-                        <input type="radio" name="entry.1000819200" value="Option 1" required>
+                        <input type="radio" name="entry.1000819200" value="Relaxing and Gaming" required
+                            data-script-id="q1-option-1-input">
                         <div class="radio-tile">
-                            <span class="radio-label">Relaxing and Gaming</span>
+                            <span class="radio-label" data-script-id="q1-option-1-label">Relaxing and Gaming</span>
                         </div>
                     </label>
                     <label class="radio-option">
-                        <input type="radio" name="entry.1000819200" value="Option 2">
+                        <input type="radio" name="entry.1000819200" value="Outdoor Adventure"
+                            data-script-id="q1-option-2-input">
                         <div class="radio-tile">
-                            <span class="radio-label">Outdoor Adventure</span>
+                            <span class="radio-label" data-script-id="q1-option-2-label">Outdoor Adventure</span>
                         </div>
                     </label>
                     <label class="radio-option">
-                        <input type="radio" name="entry.1000819200" value="Option 3">
+                        <input type="radio" name="entry.1000819200" value="Coding Marathon"
+                            data-script-id="q1-option-3-input">
                         <div class="radio-tile">
-                            <span class="radio-label">Coding Marathon</span>
+                            <span class="radio-label" data-script-id="q1-option-3-label">Coding Marathon</span>
                         </div>
                     </label>
                 </div>
@@ -52,7 +57,7 @@
                         </div>
                     </label>
                     <label class="radio-option">
-                        <input type="radio" name="entry.1845770731" value="Nayy :(((" >
+                        <input type="radio" name="entry.1845770731" value="Nayy :(((">
                         <div class="radio-tile">
                             <span class="radio-label">Nayy :(((</span>
                         </div>
@@ -62,7 +67,9 @@
 
             <button type="submit" class="btn-primary" id="submitBtn">
                 <span>Submit Response</span>
-                <div class="loader" id="submitLoader" style="width: 20px; height: 20px; border-width: 2px; vertical-align: middle; margin-left: 10px;"></div>
+                <div class="loader" id="submitLoader"
+                    style="width: 20px; height: 20px; border-width: 2px; vertical-align: middle; margin-left: 10px;">
+                </div>
             </button>
 
         </form>
@@ -70,4 +77,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>
