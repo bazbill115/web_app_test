@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekend Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weekend Vibes</h1>
+        
+        <!-- Google Form Action URL will be handled by JS for custom redirect -->
+        <form id="weekendForm">
+            
+            <!-- Question 1 -->
+            <div class="form-group">
+                <label>Options for this weekend?</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="entry.1000819200" value="Option 1" required>
+                        <div class="radio-tile">
+                            <span class="radio-label">Relaxing and Gaming</span>
+                        </div>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="entry.1000819200" value="Option 2">
+                        <div class="radio-tile">
+                            <span class="radio-label">Outdoor Adventure</span>
+                        </div>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="entry.1000819200" value="Option 3">
+                        <div class="radio-tile">
+                            <span class="radio-label">Coding Marathon</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="form-group">
+                <label>Are you excited for this weekend?</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="entry.1845770731" value="Yay :D" required>
+                        <div class="radio-tile">
+                            <span class="radio-label">Yay :D</span>
+                        </div>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="entry.1845770731" value="Nayy :(((" >
+                        <div class="radio-tile">
+                            <span class="radio-label">Nayy :(((</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-primary" id="submitBtn">
+                <span>Submit Response</span>
+                <div class="loader" id="submitLoader" style="width: 20px; height: 20px; border-width: 2px; vertical-align: middle; margin-left: 10px;"></div>
+            </button>
+
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

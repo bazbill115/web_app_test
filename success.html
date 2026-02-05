@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See you next week!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Confetti for extra yay -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <div class="container success-container">
+        <h1>Success!</h1>
+        <p class="message">See you next week!</p>
+
+        <div class="cat-image-wrapper" id="catImage">
+            <div class="loader" style="display: inline-block; margin-top: 130px;"></div>
+        </div>
+
+        <a href="index.html" class="btn-primary"
+            style="display: inline-block; text-decoration: none; margin-top: 20px;">
+            Back to Home
+        </a>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Trigger confetti
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 },
+            colors: ['#8b5cf6', '#10b981', '#ffffff']
+        });
+    </script>
+</body>
+
+</html>
